@@ -1,0 +1,134 @@
+
+Admin@DESKTOP-AL107P8 MINGW64 ~/Documents/DevOps/DevOps with AWS Jan_2025/Stanadlone App
+$ git clone https://github.com/GauravSolapure2022/DevOps_repo_maven.git
+Cloning into 'DevOps_repo_maven'...
+warning: You appear to have cloned an empty repository.
+
+Admin@DESKTOP-AL107P8 MINGW64 ~/Documents/DevOps/DevOps with AWS Jan_2025/Stanadlone App
+$ ls
+DevOps_repo_maven/
+
+Admin@DESKTOP-AL107P8 MINGW64 ~/Documents/DevOps/DevOps with AWS Jan_2025/Stanadlone App
+$ cd DevOps_repo_maven/
+
+Admin@DESKTOP-AL107P8 MINGW64 ~/Documents/DevOps/DevOps with AWS Jan_2025/Stanadlone App/DevOps_repo_maven (main)
+$ ls
+
+Admin@DESKTOP-AL107P8 MINGW64 ~/Documents/DevOps/DevOps with AWS Jan_2025/Stanadlone App/DevOps_repo_maven (main)
+$ mvn archetype:generate -DgroupId=in.empeno -DartifactId=01-Maven-App -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ------------------< org.apache.maven:standalone-pom >-------------------
+[INFO] Building Maven Stub Project (No POM) 1
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO]
+[INFO] >>> archetype:3.2.1:generate (default-cli) > generate-sources @ standalone-pom >>>
+[INFO]
+[INFO] <<< archetype:3.2.1:generate (default-cli) < generate-sources @ standalone-pom <<<
+[INFO]
+[INFO]
+[INFO] --- archetype:3.2.1:generate (default-cli) @ standalone-pom ---
+[INFO] Generating project in Batch mode
+[INFO] ----------------------------------------------------------------------------
+[INFO] Using following parameters for creating project from Old (1.x) Archetype: maven-archetype-quickstart:1.0
+[INFO] ----------------------------------------------------------------------------
+[INFO] Parameter: basedir, Value: C:\Users\test\Documents\DevOps\DevOps with AWS Jan_2025\Stanadlone App\DevOps_repo_maven
+[INFO] Parameter: package, Value: in.empeno
+[INFO] Parameter: groupId, Value: in.empeno
+[INFO] Parameter: artifactId, Value: 01-Maven-App
+[INFO] Parameter: packageName, Value: in.empeno
+[INFO] Parameter: version, Value: 1.0-SNAPSHOT
+[INFO] project created from Old (1.x) Archetype in dir: C:\Users\test\Documents\DevOps\DevOps with AWS Jan_2025\Stanadlone App\DevOps_repo_maven\01-Maven-App
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  16.493 s
+[INFO] Finished at: 2025-04-11T15:45:43+05:30
+[INFO] ------------------------------------------------------------------------
+
+Admin@DESKTOP-AL107P8 MINGW64 ~/Documents/DevOps/DevOps with AWS Jan_2025/Stanadlone App/DevOps_repo_maven (main)
+$ ls
+01-Maven-App/
+
+Admin@DESKTOP-AL107P8 MINGW64 ~/Documents/DevOps/DevOps with AWS Jan_2025/Stanadlone App/DevOps_repo_maven (main)
+$ cd 01-Maven-App/
+
+Admin@DESKTOP-AL107P8 MINGW64 ~/Documents/DevOps/DevOps with AWS Jan_2025/Stanadlone App/DevOps_repo_maven/01-Maven-App (main)
+$ ls
+pom.xml  src/
+
+Admin@DESKTOP-AL107P8 MINGW64 ~/Documents/DevOps/DevOps with AWS Jan_2025/Stanadlone App/DevOps_repo_maven/01-Maven-App (main)
+$ ls -l
+total 1
+-rw-r--r-- 1 Admin 197121 664 Apr 11 15:45 pom.xml
+drwxr-xr-x 1 Admin 197121   0 Apr 11 15:45 src/
+
+Admin@DESKTOP-AL107P8 MINGW64 ~/Documents/DevOps/DevOps with AWS Jan_2025/Stanadlone App/DevOps_repo_maven/01-Maven-App (main)
+$ ls
+pom.xml  src/
+
+Admin@DESKTOP-AL107P8 MINGW64 ~/Documents/DevOps/DevOps with AWS Jan_2025/Stanadlone App/DevOps_repo_maven/01-Maven-App (main)
+$ git statud
+git: 'statud' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+Admin@DESKTOP-AL107P8 MINGW64 ~/Documents/DevOps/DevOps with AWS Jan_2025/Stanadlone App/DevOps_repo_maven/01-Maven-App (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ./
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Admin@DESKTOP-AL107P8 MINGW64 ~/Documents/DevOps/DevOps with AWS Jan_2025/Stanadlone App/DevOps_repo_maven/01-Maven-App (main)
+$ ls
+pom.xml  src/
+
+Admin@DESKTOP-AL107P8 MINGW64 ~/Documents/DevOps/DevOps with AWS Jan_2025/Stanadlone App/DevOps_repo_maven/01-Maven-App (main)
+$ git add .
+
+Admin@DESKTOP-AL107P8 MINGW64 ~/Documents/DevOps/DevOps with AWS Jan_2025/Stanadlone App/DevOps_repo_maven/01-Maven-App (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   pom.xml
+        new file:   src/main/java/in/empeno/App.java
+        new file:   src/test/java/in/empeno/AppTest.java
+
+
+Admin@DESKTOP-AL107P8 MINGW64 ~/Documents/DevOps/DevOps with AWS Jan_2025/Stanadlone App/DevOps_repo_maven/01-Maven-App (main)
+$ git commit -m "maven stanadlone application needd to add in repo"
+[main (root-commit) eca9c26] maven stanadlone application needd to add in repo
+ 3 files changed, 69 insertions(+)
+ create mode 100644 01-Maven-App/pom.xml
+ create mode 100644 01-Maven-App/src/main/java/in/empeno/App.java
+ create mode 100644 01-Maven-App/src/test/java/in/empeno/AppTest.java
+
+Admin@DESKTOP-AL107P8 MINGW64 ~/Documents/DevOps/DevOps with AWS Jan_2025/Stanadlone App/DevOps_repo_maven/01-Maven-App (main)
+$ git status
+On branch main
+Your branch is based on 'origin/main', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+nothing to commit, working tree clean
+
+Admin@DESKTOP-AL107P8 MINGW64 ~/Documents/DevOps/DevOps with AWS Jan_2025/Stanadlone App/DevOps_repo_maven/01-Maven-App (main)
+$ git push
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (15/15), 1.41 KiB | 241.00 KiB/s, done.
+Total 15 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/GauravSolapure2022/DevOps_repo_maven.git
+ * [new branch]      main -> main
